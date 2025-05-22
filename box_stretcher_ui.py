@@ -20,10 +20,11 @@ class ColorLED(ttk.Frame):
 
 
 class Protocol:
-    L0 = None
-    STRAIN = None
-    STRAIN_RATE = None
-    CYCLES = None
+    def __init__(self):
+        self.L0 = None
+        self.STRAIN = None
+        self.STRAIN_RATE = None
+        self.CYCLES = None
 
 
 class SetupFrame(ttk.Labelframe):
